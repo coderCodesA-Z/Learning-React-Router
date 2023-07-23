@@ -1,0 +1,152 @@
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+
+
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+
+	color: #213547;
+	background-color: #ffffff;
+
+	color-scheme: light dark;
+	color: rgba(255, 255, 255, 0.87);
+	background-color: #242424;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
+
+
+body {
+	margin: 0;
+	display: flex;
+	min-height: 100vh;
+}
+
+h1 {
+	font-size: 2.2em;
+	line-height: 1.1;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.1);
+	width: 100vw;
+	padding: 1.4rem 3rem;
+}
+
+.navbar ul {
+	display: flex;
+	list-style: none;
+	align-items: center;
+	justify-content: center;
+}
+
+a {
+	font-weight: 500;
+	color: inherit;
+	text-decoration: inherit;
+	transition: all;
+	transition-duration: 300ms;
+}
+
+a:hover {
+	color: #535bf2;
+}
+
+.navbar ul li {
+	width: 130px;
+	padding: 7px 20px;
+	background-color: rgba(0, 0, 0, .3);
+	font-weight: 700;
+	margin: 0 3px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 7px;
+	color: white;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+.home,
+.about,
+.contact,
+.ticket-counter {
+	height: calc(100vh - 38.716px - 22.8px - 22.8px);
+	background-color: rgba(125, 150, 125, 0.37);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.about {
+	background-color: rgba(125, 125, 150, 0.37);
+}
+
+.contact {
+	background-color: rgba(150, 125, 125, 0.37);
+	;
+}
+
+div>h1 {
+	font-size: 3.5rem;
+}
+
+a.active {
+	color: rgba(250, 130, 250);
+}
+
+.navbar span h1 a:hover {
+	color: rgb(139, 139, 48);
+}
+
+.navbar span h1 a.active {
+	color: rgb(191, 191, 66);
+}
+
+.home-content, .ticket-counter-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+button {
+	padding: 2rem 3rem;
+	margin: 30px;
+	font-size: 1.24rem;
+	border-radius: 10px;
+	outline: none;
+	border: none;
+	transition: all;
+	animation-duration: 300ms;
+	color: rgba(0, 0, 0, 0.40);
+	font-weight: 700;
+}
+
+button:hover {
+	background-color: rgba(255, 255, 255, 0.15);
+	color: rgba(0, 0, 0, 0.45);
+	cursor: pointer;
+}
+
+.ticket-counter-content button {
+	margin: 10px;
+}
